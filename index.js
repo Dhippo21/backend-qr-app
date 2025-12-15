@@ -12,7 +12,7 @@ const db = mysql.createConnection({
     host: 'bd-eventos-qr-castilladavid202-a604.j.aivencloud.com', // TU HOST DE AIVEN
     port: 23896,           // TU PUERTO
     user: 'avnadmin',      // TU USUARIO
-    password: 'process.env.DB_PASSWORD', // <--- IMPORTANTE: Pon la contraseña real aquí
+    password: process.env.DB_PASSWORD, // <--- IMPORTANTE: Pon la contraseña real aquí
     database: 'defaultdb',
     ssl: { rejectUnauthorized: false }
 });
